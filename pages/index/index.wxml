@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <view wx:for="{{array}}" class="question">
+      {{index + 1}}.{{item.question}}
+      <br/>
+      <input id="{{index}}" wx:if="{{!(item.ifError)}}" type="text" class="trueAnswer" name="{{index}}" placeholder="请在此输入答案" value="{{item.myAnswer}}" bindblur="saveMyAnswer"/>
+      <input id="{{index}}" wx:if="{{item.ifError}}" type="text" class="wrongAnswer" name="{{index}}" placeholder="请在此输入答案" value="{{item.myAnswer}}" bindblur="saveMyAnswer"/>
+    </view>
+    <button form-type="submit">提交</button>
+  </form>
+</view>

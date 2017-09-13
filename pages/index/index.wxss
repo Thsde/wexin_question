@@ -1,0 +1,39 @@
+/**index.wxss**/
+.container {
+  height: 100%;
+  /* display: flex; */
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0;  */
+  box-sizing: border-box;
+} 
+
+.question {
+  font-size: 13px;
+  color: blue;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+.question input {
+  padding: 10px 15px;
+  background-color: #fff;
+}
+
+.trueAnswer {
+  color: black;
+}
+
+.wrongAnswer {
+  color: red;
+}
+
+button {
+  width: 40%;
+  background-color: #1AAC19;
+  border: black;
+  color: white;
+}

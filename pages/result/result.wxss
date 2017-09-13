@@ -1,0 +1,20 @@
+page {
+  height: 100%;
+  width: 100%;
+}
+
+.container-image {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+button {
+  width: 50%;
+}
